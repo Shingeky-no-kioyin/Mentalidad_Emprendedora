@@ -1,0 +1,15 @@
+ 
+/* oculto los elementos */
+input.i-email{
+    display: none;
+  }
+  
+  /* mostrará si está seleccionado value=SI */
+  input.i-radio[value="SI"]:checked ~ input.i-email {
+    display: block;
+  }
+  
+  /* no mostrará si está seleccionado value=NO */
+  input.i-radio[value="NO"]:checked ~ input.i-email {
+    display: none;
+  }
